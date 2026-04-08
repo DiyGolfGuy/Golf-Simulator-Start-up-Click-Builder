@@ -6,6 +6,18 @@ Built and maintained by **BA Custom Products**.
 
 ---
 
+## Download
+
+### [>> Download ClickBuilder.exe (Latest Release) <<](https://github.com/DiyGolfGuy/Golf-Simulator-Start-up-Click-Builder/releases/latest)
+
+[![Latest Release](https://img.shields.io/github/v/release/DiyGolfGuy/Golf-Simulator-Start-up-Click-Builder?label=Latest%20Release&style=for-the-badge)](https://github.com/DiyGolfGuy/Golf-Simulator-Start-up-Click-Builder/releases/latest)
+
+No installer, no dependencies, no admin rights required. Just download and run.
+
+[View all releases](https://github.com/DiyGolfGuy/Golf-Simulator-Start-up-Click-Builder/releases)
+
+---
+
 ## What It Does
 
 Click Builder lets you visually record a series of mouse clicks on any monitor, assign a wait time and click type (single or double) to each one, and then either run them immediately or export the whole sequence as a standalone AutoHotkey macro you can run on its own.
@@ -45,7 +57,7 @@ The builder is fully **Per-Monitor DPI Aware (V2)**, meaning it captures and rep
 
 ### Option 1: Run the compiled .exe (recommended)
 
-1. Download `ClickBuilder.exe` from the Releases page
+1. **[Download ClickBuilder.exe here](https://github.com/DiyGolfGuy/Golf-Simulator-Start-up-Click-Builder/releases/latest)**
 2. Place it anywhere you like (Desktop, Program Files, a USB stick, wherever)
 3. Double-click to launch
 
@@ -122,10 +134,11 @@ This is normal for any unsigned AutoHotkey-compiled executable. You can either c
 
 | File | Purpose |
 |---|---|
-| `ClickBuilder.exe` | Compiled standalone build for end users |
 | `ClickBuilder.ahk` | AutoHotkey v1 source code |
 | `README.md` | This file |
 | `icon.ico` | Icon used for the compiled build |
+
+The compiled `ClickBuilder.exe` is distributed through the [Releases page](https://github.com/DiyGolfGuy/Golf-Simulator-Start-up-Click-Builder/releases) rather than committed to the repository.
 
 ---
 
@@ -134,13 +147,16 @@ This is normal for any unsigned AutoHotkey-compiled executable. You can either c
 If you want to build your own `.exe` from the source file:
 
 1. Install AutoHotkey v1.1 which includes Ahk2Exe
-2. Right-click `ClickBuilder.ahk` and choose **Compile Script**, or run Ahk2Exe from the command line:
+2. Make sure `ClickBuilder.ahk` and `icon.ico` are in the same folder
+3. Right-click `ClickBuilder.ahk` and choose **Compile Script**, or run Ahk2Exe from the command line:
 
    ```
    "C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in ClickBuilder.ahk /out ClickBuilder.exe /icon icon.ico
    ```
 
-3. The resulting `ClickBuilder.exe` is fully standalone.
+4. The resulting `ClickBuilder.exe` is fully standalone.
+
+The `.ahk` source contains an `;@Ahk2Exe-SetMainIcon icon.ico` directive, so any compile method will automatically use `icon.ico` as long as it is in the same folder.
 
 ---
 
@@ -155,3 +171,4 @@ Released by BA Custom Products for use by golf simulator operators and the wider
 **BA Custom Products**
 Email: bacustomproducts@gmail.com
 Phone: (218) 684-3290
+
